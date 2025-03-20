@@ -1,4 +1,4 @@
-package com.telusko.questionservice.model;
+package com.springcloud.questionservice.model;
 
 import lombok.Data;
 import lombok.RequiredArgsConstructor;

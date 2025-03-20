@@ -1,4 +1,4 @@
-package com.telusko.quizservice;
+package com.springcloud.quizservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

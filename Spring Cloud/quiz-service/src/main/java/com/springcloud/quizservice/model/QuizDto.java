@@ -1,6 +1,6 @@
-package com.telusko.quizservice.model;
+package com.springcloud.quizservice.model;
 
-import lombok.Data;
+import lombok.*;
 
 @Data
 public class QuizDto {

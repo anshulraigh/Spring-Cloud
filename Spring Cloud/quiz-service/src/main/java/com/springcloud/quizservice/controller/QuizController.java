@@ -1,9 +1,9 @@
-package com.telusko.quizservice.controller;
+package com.springcloud.quizservice.controller;
 
-import com.telusko.quizservice.model.QuestionWrapper;
-import com.telusko.quizservice.model.QuizDto;
-import com.telusko.quizservice.model.Response;
-import com.telusko.quizservice.service.QuizService;
+import com.springcloud.quizservice.model.QuestionWrapper;
+import com.springcloud.quizservice.model.QuizDto;
+import com.springcloud.quizservice.model.Response;
+import com.springcloud.quizservice.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -22,7 +22,7 @@ public class QuizController {
         return quizService.createQuiz(quizDto.getCategoryName(), quizDto.getNumQuestions(), quizDto.getTitle());
     }
 
-    @PostMapping("get/{id}")
+    @GetMapping("get/{id}")
     public ResponseEntity<List<QuestionWrapper>> getQuizQuestions(@PathVariable Integer id){
         return quizService.getQuizQuestions(id);
     }
